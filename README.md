@@ -3,6 +3,28 @@
 ## Introduction:
 The following code tracking objects in a video. To do this uploads the video and takes from a JSON file the number and initial position of the objects to be tracked.
 
+## Flow chart
+```mermaid
+graph TD;
+    Start_App-->Open_Video;
+    Start_App-->Open_JSON_File;
+    Open_Video-->Read_First_Frame;
+    Open_JSON_File-->Read_JSON_File;
+    Read_JSON_File-->Numb_Object_to_Track;
+    Read_JSON_File-->Type_of_Object;
+    Numb_Object_to_Track-->Start_Tracking;
+    Type_of_Object-->Start_Tracking;
+    Read_First_Frame-->Start_Tracking;
+    Start_Tracking-->Update_Tracking;
+    Update_Tracking-->Update_Bounding_Box;
+    Update_Bounding_Box-->Show_Frame_With_Bounding_Box;
+    Show_Frame_With_Bounding_Box-->Update_Tracking;
+    Show_Frame_With_Bounding_Box-->Finish_Video;
+    Finish_Video-->Finish_App;
+
+```
+
+
 ## Requirements:
 1. Python (3.9)
 2. OpenCV (4.2)
