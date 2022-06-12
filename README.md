@@ -29,7 +29,7 @@ Open a terminal in the folder of project and type:
 python ./main.py -j "Full path of json file" -h "Full path of video" -t "csrt or kcf"
 ```
 ## Commands to run tracking with Docker:
-    ### Requirements:
+   ### Requirements:
     1. Docker
     2. VNC viewer
 
