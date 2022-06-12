@@ -19,9 +19,9 @@ The following code uploads the video and takes from a json file the number and i
     
 ## Commands to run tracking by terminal:
   To run this code is necessary to put the following parameters in the terminal:
- -j = full path of json file
- -v = full path of video
- -t = type of tracking (csrt or kcf)
+ * -j = full path of json file
+ * -v = full path of video
+ * -t = type of tracking (csrt or kcf)
 
 Open a terminal in the folder of project and type:
 
