@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
-""" The following code upload the video and takes from
- a json file the number and initial position of the 
- objects to be tracked.
-  To run this code is necessary to put the following parameters in the terminal:
+""" The following code uploads the video and takes from a json
+ file the number and initial position of the objects to be tracked.
+ To run this code is necessary to put the following parameters in the terminal:
  -j = full path of json file
  -v = full path of video
  -t = type of tracking (csrt or kcf)
@@ -20,6 +19,14 @@ import messages
 import logging
 import object_tracking
 
+def loggingConfig():
+    # Logg configuration
+    logging.basicConfig(filename='track.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
+    # Define a Handler which writes INFO messages or higher to the sys.stderr
+    console = logging.StreamHandler()
+    console.setLevel(logging.INFO)
+    # Add the handler to the root logger
+    logging.getLogger('').addHandler(console)
 
 def main():
     json_dir = None
@@ -69,14 +76,6 @@ def main():
     object_tracking.tracking_objects(cap, myfile, type_track)
 
 if __name__=='__main__':
-    # Logg configuration
-    logging.basicConfig(filename='track.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
-    # Define a Handler which writes INFO messages or higher to the sys.stderr
-    console = logging.StreamHandler()
-    console.setLevel(logging.INFO)
-    # Add the handler to the root logger
-    logging.getLogger('').addHandler(console)
+    loggingConfig()
 
     main()
-
-#python ./main.py -j /home/santiago/Epic_iO/initial_conditions.json -h /home/santiago/Epic_iO/input.mkv -t csrt
