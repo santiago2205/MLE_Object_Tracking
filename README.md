@@ -48,3 +48,14 @@ docker run --rm -v ${PWD}:/src -e JSONFILE="Name of json file" -e VIDEOFILE="Nam
 ```bash
 vncviewer 172.17.0.2:5900
 ```
+## Commands to run tracking with docker-compose:
+   ### Requirements:
+    1. docker-compose
+    2. VNC viewer
+With the same instructions to execute with docker run, with docker-compose you need to execute the only following two commands.
+```bash
+docker-compose up
+```
+```bash
+vncviewer 172.17.0.2:5900
+```
