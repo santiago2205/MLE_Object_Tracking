@@ -1,7 +1,7 @@
 # MLE_Object_Tracking
 ---
 ## Introduction:
-The following code uploads the video and takes from a json file the number and initial position of the objects to be tracked.
+The following code tracking objects in a video. To do this uploads the video and takes from a JSON file the number and initial position of the objects to be tracked.
 
 ## Requirements:
 1. Python (3.9)
