@@ -35,7 +35,7 @@ python ./main.py -j "Full path of json file" -h "Full path of video" -t "csrt or
 
 To view the output of the application it is necessary the "VNC viewer", if you don't have the application you can download the program from [here](https://www.realvnc.com/es/connect/download/viewer/) and run the following command
 ```bash
-sudo dpkg -i /home/santiago/Descargas/VNC-Viewer-6.22.315-Linux-x86.deb
+sudo dpkg -i /home/${USER}/Downloads/VNC-Viewer-6.22.315-Linux-x86.deb
 ```
 After it is neccessary build the Dockerfile with the following command:
 ```bash
