@@ -1,0 +1,9 @@
+services:
+
+  image: object_tracking
+  volumes:
+    - ${PWD}:/src
+  environment:
+    - JSONFILE=initial_conditions.json
+    - VIDEOFILE=input.mkv
+    - TRACK=csrt
