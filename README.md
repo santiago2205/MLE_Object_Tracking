@@ -48,7 +48,7 @@ graph TD;
 Open a terminal in the folder of project and type:
 
 ```bash
-python ./main.py -j "Full path of json file" -h "Full path of video" -t "csrt or kcf"
+python ./main.py -j "Full path of json file" -v "Full path of video" -t "csrt or kcf"
 ```
 ## Commands to run tracking with Docker:
    ### Requirements:
